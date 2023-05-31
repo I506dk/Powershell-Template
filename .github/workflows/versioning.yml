@@ -1,0 +1,49 @@
+name: Latest Version
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+env:
+  REPO: i506dk/Powershell-Template
+
+jobs:
+  version:
+    strategy:
+      matrix:
+        os: [windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Fetch all commits
+          fetch-depth: 0
+          
+      # Create semantic version
+      - name: Semantic Versioning
+        id: versioning
+        uses: PaulHatch/semantic-version@v5.0.3
+        with:
+          branch: main
+          tag_prefix: "v"
+          # A string which, if present in a git commit, indicates that a change represents a
+          # major (breaking) change, supports regular expressions wrapped with '/'
+          major_pattern: "Major"
+          # Same as above except indicating a minor change, supports regular expressions wrapped with '/'
+          minor_pattern: "Minor"
+          # Format for the version
+          format: "v${major}.${minor}.${patch}"
+
+      # Create new release
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ steps.versioning.outputs.version_tag }}
+          release_name: ${{ steps.versioning.outputs.version_tag }}
+          
