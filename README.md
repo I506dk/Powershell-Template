@@ -1,8 +1,9 @@
 # Powershell Template Repository
 
-![powershell-icon-3](https://github.com/I506dk/Powershell-Template/assets/33561466/2f70bd35-1e74-4457-8a4e-ba586cf70759)
+![powershell-icon-3](https://github.com/I506dk/Powershell-Template/assets/33561466/07b5c45c-d59c-424c-8492-dfc6d3e38a12)
 
 #### A powershell template for use with all powershell projects and repositories
+
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -53,7 +54,6 @@ C:\path\to\script\.\{script_name}.ps1 -argument_a my_data_a -argument_b my_data_
 
 ## To Do
 - [x] Add to this repository as needed
-- [x] Configure CodeQL
 - [x] Configure Semantic versioning
 - [x] Configure releases
 - [ ] Use as a template for future repositories
