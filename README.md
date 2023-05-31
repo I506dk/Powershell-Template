@@ -17,9 +17,10 @@
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) - Task automation and configuration management program developed by Microsoft
 
 ## Usage
-This repository is intended to be used as a template for powershell repositories. It cover the basic operation of a script and documentation highlighting the usage
+This repository is intended to be used as a template for powershell repositories. It covers the basic usage of a PowerShell script and establishes a baseline for documentation.
 
 To run {script_name}.ps1 for the first time:
+
 From command line:
 ```
 powershell ./{script_name}.ps1
