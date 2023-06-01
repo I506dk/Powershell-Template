@@ -17,7 +17,7 @@
 - [PowerShell](https://learn.microsoft.com/en-us/powershell/) - Task automation and configuration management program developed by Microsoft
 
 ## Usage
-This repository is intended to be used as a template for powershell repositories. It covers the basic usage of a PowerShell script and establishes a baseline for documentation.
+This repository is intended to be used as a template for powershell repositories. Clicking "Use this template" in the top right allows for the creation of a new repository using this repository as a template. This example repository covers the basic usage of a PowerShell script and establishes a baseline for documentation. When making new commits, "Major" and "Minor" are key words to include in the commit that indicate the version update to make. For example, if the current version is 1.0.0, and a new commit is added with the message "Minor changes added to script." the new version would be 1.1.0. 
 
 To run {script_name}.ps1 for the first time:
 
