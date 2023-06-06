@@ -5,8 +5,6 @@ on:
       - main
     tags:
       - 'v*'
-env:
-  REPO: i506dk/Powershell-Template
 
 jobs:
   version:
