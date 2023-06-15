@@ -1,21 +1,21 @@
 # Example powershell script utilizing basic arguments
 
-# Set input parameters
+# Set input arguments, with defaults for each
 param(
     [Parameter(Mandatory=$true,
     HelpMessage="The first argument.")]
-    [string]$argument_a="default_for_a",
+    [string]$argument_1="default_for_1",
     
     [Parameter(Mandatory=$true,
     HelpMessage="The second argument.")]
-    [string]$argument_b="default_for_b",
+    [string]$argument_2="default_for_2",
     
     [Parameter(Mandatory=$true,
     HelpMessage="The third argument.")]
-    [string]$argument_c="default_for_c"
+    [string]$argument_3="default_for_3"
 )
 
 # Print out the passed arguments
-Write-Host "Here is argument_a: $argument_a"
-Write-Host "Here is argument_b: $argument_b"
-Write-Host "Here is argument_c: $argument_c"
+Write-Host "Here is argument_a: $argument_1"
+Write-Host "Here is argument_b: $argument_2"
+Write-Host "Here is argument_c: $argument_3"
