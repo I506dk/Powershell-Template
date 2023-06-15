@@ -30,34 +30,34 @@ To run {script_name}.ps1 for the first time:
 
 From command line:
 ```
-powershell ./{script_name}.ps1
+powershell ./example_script.ps1
 ```
 From powershell:
 ```
-./{script_name}.ps1
+./example_script.ps1
 ```
 
 Arguments can be passed to the script for automation.
 
-(***-argument_a***) - the first argument.
+(***-argument_1***) - the first argument.
 
-- Examples: ```powershell ./{script_name}.ps1 -argument_a``` or ```./{script_name}.ps1 -argument_a```
+- Examples: ```powershell ./example_script.ps1 -argument_1``` or ```./example_script.ps1 -argument_1```
 
-(***-argument_b***)  - the second argument.
+(***-argument_2***)  - the second argument.
 
-- Examples: ```powershell ./{script_name}.ps1 -argument_b``` or ```./{script_name}.ps1 -argument_b```
+- Examples: ```powershell ./example_script.ps1 -argument_2``` or ```./example_script.ps1 -argument_2```
 
-(***--argument_c***) - the third argument.
+(***--argument_3***) - the third argument.
 
-- Examples: ```powershell ./{script_name}.ps1 -argument_c``` or ```./{script_name}.ps1 -argument_c```
+- Examples: ```powershell ./example_script.ps1 -argument_3``` or ```./example_script.ps1 -argument_3```
 
 Example run using arguments:
 ```
-powershell C:\path\to\script\.\{script_name}.ps1 -argument_a my_data_a -argument_b my_data_b -argument_c my_data_c
+powershell C:\path\to\script\./example_script.ps1 -argument_1 my_first_string -argument_2 my_second_string -argument_3 my_third_string
 ```
 or
 ```
-C:\path\to\script\.\{script_name}.ps1 -argument_a my_data_a -argument_b my_data_b -argument_c my_data_c
+C:\path\to\script\./example_script.ps1 -argument_1 my_first_string -argument_2 my_second_string -argument_3 my_third_string
 ```
 
 ## To Do
