@@ -6,6 +6,7 @@
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![PSScriptAnalyzer](https://github.com/I506dk/Powershell-Template/actions/workflows/powershell.yml/badge.svg)](https://github.com/I506dk/Powershell-Template/actions/workflows/powershell.yml)
 
 ## Features
 - Automation
