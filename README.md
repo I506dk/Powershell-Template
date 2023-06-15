@@ -64,5 +64,6 @@ C:\path\to\script\.\{script_name}.ps1 -argument_a my_data_a -argument_b my_data_
 - [x] Add to this repository as needed
 - [x] Configure Semantic versioning
 - [x] Configure releases
+- [x] Configure Linting
 - [ ] Use as a template for future repositories
 
